@@ -2,15 +2,21 @@ import Avatar from '../../components/Avatar'
 import Paragrafo from '../../components/Paragrafo'
 import Titulo from '../../components/Titulo'
 
+import { Descricao, BotaoTema, SidebarContainer } from './styles'
+
 const Sidebar = () => (
   <aside>
-    <Avatar />
-    <Titulo fontSize={20}>Marcos Viana</Titulo>
-    <Paragrafo tipo="secundario" fontSize={16}>
-      marcosvianalmv
-    </Paragrafo>
-    <Paragrafo fontSize={12}>Desenvolvedor Front-end</Paragrafo>
-    <button>Trocar tema</button>
+    <SidebarContainer>
+      <Avatar />
+      <Titulo fontSize={20}>Marcos Viana</Titulo>
+      <Paragrafo tipo="secundario" fontSize={16}>
+        marcosvianalmv
+      </Paragrafo>
+      <Descricao tipo="principal" fontSize={12}>
+        Desenvolvedor Front-end
+      </Descricao>
+      <BotaoTema>Trocar tema</BotaoTema>
+    </SidebarContainer>
   </aside>
 )
 
