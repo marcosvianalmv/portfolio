@@ -1,5 +1,5 @@
 const temaLight = {
-  corPrincipal: 'red',
+  corPrincipal: '#282a35',
   corSecundaria: '#949494',
   corDeFundo: '#fff',
   corDeFundoBotao: '#4476bf',
@@ -7,3 +7,11 @@ const temaLight = {
 }
 
 export default temaLight
+
+export type LightTheme = {
+  corPrincipal: string
+  corSecundaria: string
+  corDeFundo: string
+  corDeFundoBotao: string
+  corDaBorda: string
+}
